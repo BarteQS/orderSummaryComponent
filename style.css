@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    /* Colors */
+    --clr-pale-blue: hsl(225 100% 94%);
+    --clr-bright-blue: hsl(245 75% 52%); /* For the button */
+    --clr-very-pale-blue: hsl(225 100% 98%);
+    --clr-desaturated-blue: hsl(224 23% 55%); /* For the link */
+    --clr-dark-blue: hsl(223 47% 23%);
+
+    /* Font Weights */
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-black: 900;
+}
+
+/* CSS Reset Beginning */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--clr-pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: var(--fw-medium);
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* ! May cause issues ! */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+}
+/* CSS Reset End */
