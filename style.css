@@ -76,6 +76,8 @@ p, h1, h2, h3, h4, h5, h6 {
     background-color: #fff;
     border-radius: 1em;
     margin: 1rem;
+    max-width: 450px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 
 .summary__title {
@@ -105,7 +107,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .summary__change-plan {
-    margin-left: 1.4em;
+    margin-left: auto;
+    margin-right: 1.5em;
     font-size: .9em;
 }
 
@@ -123,9 +126,14 @@ p, h1, h2, h3, h4, h5, h6 {
     font-weight: var(--fw-bold);
 }
 
+.summary__change-plan a:is(:hover, :focus) {
+    color: var(--clr-desaturated-blue);
+}
+
 button {
     border: 0;
     padding: 1em;
+    cursor: pointer;
 }
 
 .buttons {
@@ -143,6 +151,11 @@ button {
     background-color: var(--clr-bright-blue);
     color: #fff;
     font-weight: var(--fw-bold);
+    box-shadow: 1px 1px 10px 1px var(--clr-dark-blue);
+}
+
+.proceed-to-payment:is(:hover, :focus) {
+    background-color: var(--clr-desaturated-blue);
 }
 
 .cancel-order {
@@ -151,4 +164,13 @@ button {
     background-color: transparent;
     color: var(--clr-desaturated-blue);
     font-weight: var(--fw-bold);
+}
+
+.cancel-order:is(:hover, :focus) {
+    font-weight: var(--fw-black);
+    color: var(--clr-dark-blue);
+}
+
+.cancel-order:active {
+    transform: scale(.98);
 }
