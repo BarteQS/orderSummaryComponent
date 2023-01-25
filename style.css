@@ -80,12 +80,16 @@ p, h1, h2, h3, h4, h5, h6 {
     box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 
+.summary__content {
+    margin-top: 1.5em;
+}
+
 .summary__title {
     text-align: center;
     font-weight: var(--fw-black);
     font-size: 1.5rem;
     color: var(--clr-dark-blue);
-    margin-top: 1em;
+    
 }
 
 .summary__text {
