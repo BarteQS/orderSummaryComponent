@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="./public/favicon.png" type="image/png">
-  <title>Order Summary</title>
-</head>
-<body>
-  <main>
-    <article class="summary">
-      <img src="./images/illustration-hero.svg" alt="Girl dancing to the music playing on her headphones." width="450" height="220" class="summary__image">
-      <div class="summary__content">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Order Summary</title>
+  </head>
+  <body>
+    <main>
+      <article class="summary">
+        <img
+          src="./images/illustration-hero.svg"
+          alt="Illustration of a girl playing music on her headphones and dancing to it. City silhoutte in the background."
+          class="summary__image"
+        />
         <h1 class="summary__title">Order Summary</h1>
-        <p class="summary__text">You can now listen to millions of songs, audiobooks, and podcasts on any 
-          device anywhere you like!</p>
-          <div class="flex-group-outer">
-            <img src="./images/icon-music.svg" alt="" class="note-icon">
-            <div>
-              <p class="summary__plan">Annual Plan</p>
-              <p class="summary__price">$59.99/year</p>
-            </div>
-            <p class="summary__change-plan"><a href="#">Change</a></p>
+        <p class="summary__text">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+        <div class="summary__plan">
+          <img
+            src="./images/icon-music.svg"
+            alt="Musical note icon"
+            class="summary__note-icon"
+          />
+          <div class="summary__plan-spec">
+            <p class="summary__plan-type">Annual Plan</p>
+            <p class="summary__plan-price">$59.99/year</p>
           </div>
-          <div class="buttons">
-            <button class="proceed-to-payment">Proceed to Payment</button>
-            <button class="cancel-order">Cancel Order</button>
-          </div>
-      </div>
-    </article>
-  </main>
-</body>
+          <a href="#" class="summary__change">Change</a>
+        </div>
+        <a href="#" class="summary__proceed lower-buttons">Proceed to Payment</a>
+        <a href="#" class="summary__cancel lower-buttons">Cancel Order</a>
+      </article>
+    </main>
+  </body>
 </html>
