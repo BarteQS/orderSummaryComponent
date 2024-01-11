@@ -79,7 +79,7 @@ body {
     background-color: #fff;
     margin: 1.5rem;
     border-radius: 1em;
-    max-width: 450px;
+    max-width: 400px;
 }
 
 .summary img {
@@ -88,14 +88,14 @@ body {
 }
 
 .summary__title {
-    margin-top: 1.7rem;
+    margin-top: 2.5rem;
     text-align: center;
     color: #0f1a38;
     font-weight: 900;
 }
 
 .summary__text {
-    margin-top: 1rem;
+    margin-top: .7rem;
     text-align: center;
     padding: 0 2em;
     color: var(--clr-desaturated-blue);
@@ -107,6 +107,7 @@ body {
     margin: 1.5rem 2rem 0 2rem;
     padding: .75rem;
     border-radius: .5rem;
+    align-items: center;
 }
 
 .summary__plan img {
@@ -131,7 +132,8 @@ body {
 
 .summary__change {
     color: var(--clr-bright-blue);
-    margin: auto 5.5rem;
+    margin: auto;
+    margin-left: 5rem;
 }
 
 .lower-buttons {
